@@ -20,3 +20,6 @@ loadButton.onClick = [this] {
         processor.setStateInformation(data.getData(), (int)data.getSize());
     }
 };
+
+envelopeValues.resize(processor.getVocoderUnit()->getNumBands());
+startTimerHz(30); // update 30 FPS
